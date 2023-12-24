@@ -1,6 +1,7 @@
-.phonebook {
-  margin-left: 50px;
+.wrapper {
+  margin: 50px;
 }
+
 .phonebook-menu {
   display: flex;
   border: 1px black solid;
@@ -27,4 +28,10 @@
 .filter {
   display: flex;
   flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
 }
