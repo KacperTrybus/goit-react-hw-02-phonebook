@@ -1,4 +1,4 @@
-// import { Component } from 'react';
+import PropTypes from 'prop-types';
 
 function ContactList({ contacts, handleContactDelete }) {
   const displayContacts = () => {
@@ -21,5 +21,10 @@ function ContactList({ contacts, handleContactDelete }) {
     </div>
   );
 }
+
+ContactList.propTypes = {
+  contacts: PropTypes.array.isRequired,
+  handleContactDelete: PropTypes.func.isRequired,
+};
 
 export default ContactList;
